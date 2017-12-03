@@ -19,6 +19,8 @@
 		A5D565EA1FCF2C5B00D47976 /* People+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D565E81FCF2C5B00D47976 /* People+CoreDataProperties.swift */; };
 		A5D565ED1FCF2C8700D47976 /* Calls+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D565EB1FCF2C8700D47976 /* Calls+CoreDataClass.swift */; };
 		A5D565EE1FCF2C8700D47976 /* Calls+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D565EC1FCF2C8700D47976 /* Calls+CoreDataProperties.swift */; };
+		A5D565F01FD48DE000D47976 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D565EF1FD48DE000D47976 /* PeopleTableViewController.swift */; };
+		A5D565F21FD48EC200D47976 /* CallsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D565F11FD48EC200D47976 /* CallsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		A5D565E81FCF2C5B00D47976 /* People+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "People+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A5D565EB1FCF2C8700D47976 /* Calls+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calls+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A5D565EC1FCF2C8700D47976 /* Calls+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calls+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5D565EF1FD48DE000D47976 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		A5D565F11FD48EC200D47976 /* CallsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				A5D565B61FCF15C900D47976 /* LaunchScreen.storyboard */,
 				A5D565B91FCF15C900D47976 /* Info.plist */,
 				A5D565B11FCF15C900D47976 /* PhoneBook.xcdatamodeld */,
+				A5D565EF1FD48DE000D47976 /* PeopleTableViewController.swift */,
+				A5D565F11FD48EC200D47976 /* CallsTableViewController.swift */,
 			);
 			path = PhoneBook;
 			sourceTree = "<group>";
@@ -282,12 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D565F21FD48EC200D47976 /* CallsTableViewController.swift in Sources */,
 				A5D565EA1FCF2C5B00D47976 /* People+CoreDataProperties.swift in Sources */,
 				A5D565AD1FCF15C900D47976 /* ViewController.swift in Sources */,
 				A5D565EE1FCF2C8700D47976 /* Calls+CoreDataProperties.swift in Sources */,
 				A5D565B31FCF15C900D47976 /* PhoneBook.xcdatamodeld in Sources */,
 				A5D565E91FCF2C5B00D47976 /* People+CoreDataClass.swift in Sources */,
 				A5D565AB1FCF15C900D47976 /* AppDelegate.swift in Sources */,
+				A5D565F01FD48DE000D47976 /* PeopleTableViewController.swift in Sources */,
 				A5D565ED1FCF2C8700D47976 /* Calls+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

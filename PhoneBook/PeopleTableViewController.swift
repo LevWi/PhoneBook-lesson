@@ -13,20 +13,32 @@ class PeopleTableViewController: UITableViewController {
 
     var people = [People]()
     
-    var managedObjectContext : NSManagedObjectContext!
+    var managedObjectContext /*: NSManagedObjectContext!*/ = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        reloadData()
         
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    
+    func reloadData() {
+        let request = NSFetchRequest<People>(entityName: "People")
+        do {
+            people = try managedObjectContext.fetch(request)
+        } catch let error as NSError {
+            print("Can't fetch \(error)")
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

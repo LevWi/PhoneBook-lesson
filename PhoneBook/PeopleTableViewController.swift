@@ -30,9 +30,9 @@ class PeopleTableViewController: UITableViewController {
 
     
     func reloadData() {
-        let request = NSFetchRequest<People>(entityName: "People")
+        let request : NSFetchRequest<People> = People.fetchRequest() // NSFetchRequest<People>(entityName: "People")
         do {
-            people = try managedObjectContext.fetch(request)
+             people = try managedObjectContext.fetch(request)
         } catch let error as NSError {
             print("Can't fetch \(error)")
         }

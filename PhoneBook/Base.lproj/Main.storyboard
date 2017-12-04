@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--People-->
         <scene sceneID="Yhg-c5-93b">
             <objects>
-                <tableViewController id="XiB-e7-Cf8" customClass="PeopleTableViewController" customModule="PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="People" id="XiB-e7-Cf8" customClass="PeopleTableViewController" customModule="PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YjT-HO-zgL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,13 +32,13 @@
                             <outlet property="delegate" destination="XiB-e7-Cf8" id="hmS-W1-CJq"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="m8o-NT-yPi"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="m8o-NT-yPi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0c-BI-oYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1697" y="-501"/>
         </scene>
-        <!--Item-->
+        <!--Calls Table View Controller-->
         <scene sceneID="msi-Wc-4l1">
             <objects>
                 <tableViewController id="iDQ-Uf-cam" customClass="CallsTableViewController" customModule="PhoneBook" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,7 +61,7 @@
                             <outlet property="delegate" destination="iDQ-Uf-cam" id="N7v-97-5rU"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="vmy-Tk-Byr"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="vmy-Tk-Byr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPX-Gt-nZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
